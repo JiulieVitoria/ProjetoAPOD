@@ -13,12 +13,10 @@ function apod() {
 
     $.ajax({
         url: `https://api.nasa.gov/planetary/apod?api_key=fPYCd2Epp6jDc2uLnSnZfG1RM9Ed4q4W2YpCbxaz&date=${data}`,
-
         success: function (search) {
             artigo.css("visibility", "visible");
             ttl.text(search.title);
             dscc.text(search.explanation);
-
             if (search.media_type == "image") {
                 img.attr("src", search.url);
                 img.css("display", "block");
