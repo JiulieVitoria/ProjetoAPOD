@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../imgs/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.apod {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 15px;
+    text-shadow: 2px 2px 8px #000000;
+    cursor: pointer;
+}
+
+.apod:hover {
+    font-size: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#textbox {
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 15px;
+    text-shadow: 2px 2px 8px #000000;
+    font-weight: bold;
+}
+
+#data {
+    margin-left: 45%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+button {
+    width: 80px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 82px;
+    font-size: 16px;
+}
+
+.nasa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    visibility: hidden;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+
+}
+

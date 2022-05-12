@@ -5,29 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lobster+Two&family=Square+Peg&family=VT323&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <title>APOD</title>
 </head>
 
 <body>
     <div>
         <header>
-            <h1 class="apod">Astronomy Picture Of the Day</h1>
-        </header>
-        <footer>
-            <p>
-                Página desenvolvida por <a class="link" href="https://www.linkedin.com/in/jiulie-vitoria/">Jiulie
-                    Vitória</a>
-            </p>
-        </footer>
+            <h1 class="apod"><a href=https://apod.nasa.gov/apod/astropix.html>Astronomy Picture Of the Day</a> </h1>
+        </header> 
+    </div> 
+    <div id="textbox">
+        <p class="text"> Se você tem alguma data importante a partir do dia 16 de junho de 1995, a NASA tem uma foto do espaço para você!</p>
+        <p class="text"> Escolha a data abaixo e aguarde mágica acontecer.</p>
     </div>
-    <script src="index.js"> </script>
+    <div>
+        <section>
+            <input type="date" id="data" name="data" min="1995-06-16">
+            <button class="btn" type="button" onclick="buscar()"> procurar </button>
+        </section>
+    </div>
+    <div class="nasa">
+            <h2 class="titleNasa"></h2>
+            <p class="textNasa"></p>
+            <img class="imgNasa"/>
+            <iframe class="frameNasa" src="" frameborder="0"></iframe>
+    </div>
+    <footer>
+        <p>
+            Projeto desenvolvido por <a href="https://www.linkedin.com/in/jiulie-vitoria/">Jiulie
+                Vitória</a>
+        </p>
+    </footer>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"> </script>
 </body>
 
 </html>
